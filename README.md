@@ -13,9 +13,6 @@ Modern, premium "Gold & Navy" themed portfolio with multi-language support (Engl
 ## Technologies Used
 - HTML5 & Vanilla CSS
 - JavaScript (ES6+)
-- [Boxicons](https://boxicons.com/)
-- [AOS (Animate On Scroll)](https://michalsnik.github.io/aos/)
-- [FlagCDN](https://flagcdn.com/)
 
 ## Deployment
 This project is ready to be hosted on **GitHub Pages**, **Netlify**, or **Vercel**.

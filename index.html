@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!-- Icon & Animation Libraries -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Swiper.js (Modern Slider) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>NANANG | Professional Portfolio</title>
+</head>
+
+<body>
+  <!-- Navigation Header -->
+  <header>
+    <div class="logo">
+      <a href="/">NA<span>NANG</span></a>
+    </div>
+
+    <nav class="nav-desktop">
+      <a href="#home" data-en="Home" data-id="Beranda">Home</a>
+      <a href="#about" data-en="About" data-id="Tentang">About</a>
+      <a href="#services" data-en="Services" data-id="Layanan">Services</a>
+      <a href="#skill" data-en="Skills" data-id="Keahlian">Skills</a>
+      <a href="#project" data-en="Projects" data-id="Proyek">Projects</a>
+      <a href="#contact" data-en="Contact" data-id="Kontak">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button id="theme-toggle" class="theme-toggle">
+        <i class='bx bxs-moon' id="theme-icon"></i>
+      </button>
+      <button id="lang-toggle" class="lang-toggle">
+        <img src="https://flagcdn.com/w40/id.png" alt="ID" width="24" />
+      </button>
+      <button class="btn-outline" onclick="location.href='#contact'">
+        <span data-en="Hire Me" data-id="Rekrut Saya">Hire Me</span>
+      </button>
+      <div id="menu" class="hamburger-menu">
+        <i class='bx bx-menu'></i>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="nav-mobile" class="mobile-nav">
+      <div id="close-mobile" class="close">
+        <i class='bx bx-x'></i>
+      </div>
+      <ul>
+        <li><a class="nav-link" href="#home" data-en="Home" data-id="Beranda">Home</a></li>
+        <li><a class="nav-link" href="#about" data-en="About" data-id="Tentang">About</a></li>
+        <li><a class="nav-link" href="#services" data-en="Services" data-id="Layanan">Services</a></li>
+        <li><a class="nav-link" href="#skill" data-en="Skills" data-id="Keahlian">Skills</a></li>
+        <li><a class="nav-link" href="#project" data-en="Projects" data-id="Proyek">Projects</a></li>
+        <li><a class="nav-link" href="#contact" data-en="Contact" data-id="Kontak">Contact</a></li>
+        <li style="margin-top: 30px;">
+          <button class="btn-outline" onclick="location.href='#contact'; document.getElementById('nav-mobile').classList.remove('show'); document.body.style.overflow='auto';">
+            <span data-en="Hire Me" data-id="Rekrut Saya">Hire Me</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+          <span data-en="Hi, I am NANANG" data-id="Halo, Saya NANANG" data-text="Hi, I am NANANG">Hi, I am NANANG</span>
+        </h1>
+        <p data-aos="fade-up" data-aos-delay="200"
+          data-en="Professional Frontend Developer & UI/UX Specialist crafting interactive digital experiences."
+          data-id="Frontend Developer & Spesialis UI/UX Profesional yang menghadirkan pengalaman digital interaktif.">
+          Professional Frontend Developer & UI/UX Specialist crafting interactive digital experiences.
+        </p>
+        <div class="hero-socials" data-aos="fade-up" data-aos-delay="400">
+          <a href="#"><i class='bx bxl-facebook'></i></a>
+          <a href="#"><i class='bx bxl-twitter'></i></a>
+          <a href="#"><i class='bx bxl-github'></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="section-header">
+      <h2 class="watermark" data-en="ABOUT ME" data-id="TENTANG SAYA">ABOUT ME</h2>
+      <h1 class="section-title" data-en="About Me" data-id="Tentang Saya">About Me</h1>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-img-box" data-aos="fade-right">
+        <img src="assets/images/foto1.png" alt="NANANG" />
+      </div>
+
+      <div class="about-details" data-aos="fade-left">
+        <h3><span data-en="Hi There! I'm" data-id="Halo! Saya">Hi There! I'm</span> <span>NANANG</span></h3>
+        <p class="subtitle" data-en="Visual & Web Designer" data-id="Desainer Visual & Web">Visual & Web Designer</p>
+        <p class="description"
+          data-en="I am a dedicated Front-End Developer passionate about creating modern, interactive, and user-friendly web experiences. I focus on responsive layouts and performance optimization."
+          data-id="Saya adalah Pengembang Front-End yang berdedikasi dan bersemangat dalam menciptakan pengalaman web yang modern, interaktif, dan mudah digunakan. Saya fokus pada tata letak responsif dan optimasi performa.">
+          I am a dedicated Front-End Developer passionate about creating modern, interactive, and user-friendly web
+          experiences. I focus on responsive layouts and performance optimization.
+        </p>
+
+        <ul class="personal-info">
+          <li><strong data-en="Birthday:" data-id="Ulang Tahun:">Birthday:</strong> NOV 01, 2000</li>
+          <li><strong data-en="Email:" data-id="Email:">Email:</strong> nanang@example.com</li>
+          <li><strong data-en="Residence:" data-id="Tempat Tinggal:">Residence:</strong> Indonesian</li>
+          <li><strong data-en="Language:" data-id="Bahasa:">Language:</strong> English, Indonesian</li>
+          <li><strong data-en="Freelance:" data-id="Pekerjaan Lepas:">Freelance:</strong> Available</li>
+        </ul>
+
+        <button class="btn-primary" data-en="Download CV" data-id="Unduh CV">Download CV</button>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="watermark" data-en="SERVICES" data-id="LAYANAN">SERVICES</h2>
+        <h1 class="section-title" data-en="My Services" data-id="Layanan Saya">My Services</h1>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card" data-aos="zoom-in">
+          <i class='bx bx-palette'></i>
+          <h4 data-en="UI/UX Design" data-id="Desain UI/UX">UI/UX Design</h4>
+          <p data-en="Intuitive and visually appealing interfaces for modern web apps."
+            data-id="Antarmuka intuitif dan menarik secara visual untuk aplikasi web modern.">Intuitive and visually
+            appealing interfaces for modern web apps.</p>
+        </div>
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+          <i class='bx bx-code-alt'></i>
+          <h4 data-en="Web Development" data-id="Pengembangan Web">Web Development</h4>
+          <p data-en="Clean, efficient, and scalable frontend solutions using React/Next.js."
+            data-id="Solusi frontend yang bersih, efisien, dan skalabel menggunakan React/Next.js.">Clean, efficient,
+            and scalable frontend solutions using React/Next.js.</p>
+        </div>
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+          <i class='bx bx-mobile-alt'></i>
+          <h4 data-en="App Design" data-id="Desain Aplikasi">App Design</h4>
+          <p data-en="Mobile-first designs ensuring perfect layout on every screen size."
+            data-id="Desain berbasis mobile-first yang memastikan tata letak sempurna di setiap ukuran layar.">
+            Mobile-first designs ensuring perfect layout on every screen size.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skill" class="skills-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="watermark" data-en="SKILLS" data-id="KEAHLIAN">SKILLS</h2>
+        <h1 class="section-title" data-en="Professional Skills" data-id="Keahlian Profesional">Professional Skills</h1>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-item" data-aos="fade-up">
+          <div class="skill-head"><span>HTML & CSS</span> <span>95%</span></div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 95%;"></div>
+          </div>
+        </div>
+        <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="skill-head"><span>JavaScript</span> <span>85%</span></div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 85%;"></div>
+          </div>
+        </div>
+        <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-head"><span>React.js</span> <span>80%</span></div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 80%;"></div>
+          </div>
+        </div>
+        <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="skill-head"><span>UI Design</span> <span>90%</span></div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 90%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="project" class="projects-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="watermark">PROJECTS</h2>
+        <h1 class="section-title">My Projects</h1>
+      </div>
+
+      <!-- Swiper Wrapper for AOS -->
+      <div data-aos="fade-up">
+        <div class="swiper projects-slider">
+          <div class="swiper-wrapper">
+          <!-- Project 1 -->
+          <div class="swiper-slide">
+            <div class="project-card">
+              <div class="card-img"><img src="https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1000" alt="p1" /></div>
+              <div class="card-info">
+                <h4 data-en="E-commerce App" data-id="Aplikasi E-commerce">E-commerce App</h4>
+                <p data-en="Modern online shopping experience." data-id="Pengalaman belanja online modern.">Modern online
+                  shopping experience.</p>
+                <div class="card-links"><a href="#">Github</a> <a href="#">Live Demo</a></div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="swiper-slide">
+            <div class="project-card">
+              <div class="card-img"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000" alt="p2" /></div>
+              <div class="card-info">
+                <h4 data-en="Social Analytics" data-id="Analitik Sosial">Social Analytics</h4>
+                <p data-en="Real-time data visualization dashboard." data-id="Dasbor visualisasi data real-time.">Real-time
+                  data visualization dashboard.</p>
+                <div class="card-links"><a href="#">Github</a> <a href="#">Live Demo</a></div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="swiper-slide">
+            <div class="project-card">
+              <div class="card-img"><img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&q=80&w=1000" alt="p3" /></div>
+              <div class="card-info">
+                <h4 data-en="Task Management" data-id="Manajemen Tugas">Task Management</h4>
+                <p data-en="Clean productivity boosting application." data-id="Aplikasi penguat produktivitas yang bersih.">Clean productivity boosting application.</p>
+                <div class="card-links"><a href="#">Github</a> <a href="#">Live Demo</a></div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 4 -->
+          <div class="swiper-slide">
+            <div class="project-card">
+              <div class="card-img"><img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&q=80&w=1000" alt="p4" /></div>
+              <div class="card-info">
+                <h4 data-en="Portfolio Website v2" data-id="Website Portofolio v2">Portfolio Website v2</h4>
+                <p data-en="Clean minimalist personal branding site." data-id="Situs branding pribadi minimalis yang bersih.">Clean minimalist personal branding site.</p>
+                <div class="card-links"><a href="#">Github</a> <a href="#">Live Demo</a></div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 5 -->
+          <div class="swiper-slide">
+            <div class="project-card">
+              <div class="card-img"><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&q=80&w=1000" alt="p5" /></div>
+              <div class="card-info">
+                <h4 data-en="Fitness Tracker" data-id="Pelacak Kebugaran">Fitness Tracker</h4>
+                <p data-en="Mobile-first health monitoring app." data-id="Aplikasi pemantauan kesehatan mobile-first.">Mobile-first health monitoring app.</p>
+                <div class="card-links"><a href="#">Github</a> <a href="#">Live Demo</a></div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 6 -->
+          <div class="swiper-slide">
+            <div class="project-card">
+              <div class="card-img"><img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=1000" alt="p6" /></div>
+              <div class="card-info">
+                <h4 data-en="Crypto Wallet UI" data-id="Antarmuka Dompet Kripto">Crypto Wallet UI</h4>
+                <p data-en="Modern dark-mode crypto interface." data-id="Antarmuka kripto mode gelap modern.">Modern dark-mode crypto interface.</p>
+                <div class="card-links"><a href="#">Github</a> <a href="#">Live Demo</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Swiper Controls -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="watermark" data-en="CONTACT" data-id="KONTAK">CONTACT</h2>
+        <h1 class="section-title" data-en="Get In Touch" data-id="Hubungi Saya">Get In Touch</h1>
+      </div>
+
+      <form class="contact-form" data-aos="fade-up">
+        <div class="form-row">
+          <input type="text" placeholder="Your Name" data-en="Your Name" data-id="Nama Anda" required />
+          <input type="email" placeholder="Your Email" data-en="Your Email" data-id="Email Anda" required />
+        </div>
+        <input type="text" placeholder="Subject" data-en="Subject" data-id="Subjek" required />
+        <textarea placeholder="Your Message" data-en="Your Message" data-id="Pesan Anda" required></textarea>
+        <button type="submit" class="btn-primary" data-en="Send Message" data-id="Kirim Pesan">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-wrap">
+        <a href="#" class="footer-logo">NA<span>NANG</span></a>
+        <p class="footer-tagline" data-en="Turning complex problems into elegant digital solutions."
+          data-id="Mengubah masalah kompleks menjadi solusi digital yang elegan.">Turning complex problems into elegant
+          digital solutions.</p>
+        <div class="footer-socials">
+          <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg></a>
+          <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg></a>
+          <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg></a>
+        </div>
+        <p data-en="© 2026 NANANG. All Rights Reserved." data-id="© 2026 NANANG. Seluruh Hak Cipta Dilindungi.">© 2026
+          NANANG. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+</body>
+
+</html>
